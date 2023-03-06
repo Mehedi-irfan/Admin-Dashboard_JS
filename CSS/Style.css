@@ -36,6 +36,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  overflow: hidden;
 }
 html {
   font-size: 14px;
@@ -50,9 +51,9 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 14rem auto 23rem;
-  gap: 1.8rem;
   width: 96%;
+  grid-template-columns: 14rem auto 22rem;
+  gap: 1.8rem;
   margin: 0 auto;
 }
 a {
@@ -213,14 +214,13 @@ main .date input[type="date"] {
 main .insights {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 main .insights > div {
   background-color: var(--color-white);
-  padding: var(--card-padding);
+  padding: 1.4rem;
   border-radius: var(--card-border-radius);
   margin-top: 1rem;
-  box-shadow: var(--box-shadow);
   transition: all 0.3s ease;
 }
 main .insights > div:hover {
@@ -325,4 +325,53 @@ main .recent-orders a {
   margin: 1rem auto;
   color: var(--color-primary);
   display: block;
+}
+
+/* ==============Right of Container========= */
+.right {
+  margin-top: 1.4rem;
+  width: 100%;
+}
+.right .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+.right .top button {
+  display: none;
+}
+.right .theme-logoler {
+  background-color: var(--color-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-2);
+}
+.right .theme-logoler span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right .theme-logoler span.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius-2);
+}
+.right .top .profile {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+}
+/* ===========recent updates right========== */
+.right .recent-updates {
+  margin-top: 1rem;
+}
+.right .recent-updates h2 {
+  margin-bottom: 0.8rem;
 }
