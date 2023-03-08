@@ -137,6 +137,9 @@ aside .logo {
   display: flex;
   gap: 0.6rem;
 }
+aside .logo h2 {
+  color: var(--color-dark);
+}
 aside .logo img {
   width: 2rem;
   height: 2rem;
@@ -210,6 +213,9 @@ aside .sidebar .message-count {
 main {
   margin-top: 1.4rem;
 }
+main h1 {
+  color: var(--color-dark);
+}
 main .date {
   display: inline-block;
   background-color: var(--color-light);
@@ -258,6 +264,10 @@ main .insights > div .middle {
 main .insights h3 {
   margin: 1rem 0 0.2rem;
   font-size: 1rem;
+  color: var(--color-dark);
+}
+main .insights h1 {
+  color: var(--color-dark);
 }
 main .insights .progress {
   position: relative;
@@ -310,6 +320,7 @@ main .insights small {
 }
 main .recent-orders h2 {
   margin-bottom: 0.8rem;
+  color: var(--color-dark);
 }
 main .recent-orders table {
   background-color: var(--color-white);
@@ -330,6 +341,9 @@ main table tbody td {
 }
 main table tbody tr:last-child td {
   border: none;
+}
+main table thead tr th {
+  color: var(--color-dark);
 }
 main .recent-orders a {
   text-align: center;
@@ -385,6 +399,7 @@ main .recent-orders a {
 }
 .right .recent-updates h2 {
   margin-bottom: 0.8rem;
+  color: var(--color-dark);
 }
 .right .recent-updates .updates {
   background-color: var(--color-white);
@@ -408,6 +423,7 @@ main .recent-orders a {
 }
 .right .sales-analytics h2 {
   margin-bottom: 0.8rem;
+  color: var(--color-dark);
 }
 .right .sales-analytics .item {
   background-color: var(--color-white);
@@ -459,6 +475,9 @@ main .recent-orders a {
 }
 .right .sales-analytics .add-products div h3 {
   font-weight: 600;
+}
+.right .info h3 {
+  color: var(--color-dark);
 }
 /* ============MEDIA QUERIES============= */
 @media screen and (max-width: 1200px) {
